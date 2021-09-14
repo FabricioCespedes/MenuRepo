@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.contenedor
+{
+    display: grid;
+   grid-template-areas: 
+   "a b"
+   "c c";
+    width: 80vw;
+    height: 90vh;
+    border: solid blue;
+    margin: auto;
+    margin-top: 5%;
+}
+.imgs
+{
+    grid-area:a ;
+    width: 39vw;
+    height: 80vh;
+    border: chartreuse solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr; padding: 4%;
+    padding-left: 10%;
+}
+
+.carro
+{
+    grid-area: b;
+    width: 39vw;
+    height: 80vh;
+    background-color: burlywood;
+    border: chartreuse solid;
+   
+}
+.botones
+{
+    grid-area: c;
+    text-align: center;
+}
+.img{
+    width: 80%;
+    height: 60%;
+
+}
+
+.img2{
+    width: 300px;
+    height: 350px;
+
+}
+.ocultar
+{
+    display: none;
+}

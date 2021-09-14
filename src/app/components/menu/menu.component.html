@@ -1,0 +1,13 @@
+
+<div class="body">
+    <h1 >Sabor Gourmet</h1>
+    <button routerLink="sopas" type="button"  mat-raised-button color="primary">Ingresar al men&uacute;</button>
+    <p [ngClass]="{'limitTextHeight': isReadMore}" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Minima tenetur cumque quisquam doloremque aliquam? Iure!</p>
+    <button type="button" (click)="showText()">
+        {{ isReadMore ? 'Read More': 'Read Less' }}
+    </button>
+
+</div>
+
+

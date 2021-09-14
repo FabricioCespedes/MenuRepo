@@ -1,0 +1,34 @@
+
+<div class="contenedor">
+    <div class="imgs">   
+      
+        <img id="1" class="img" src="{{link}}">
+        <img id="2" class="img" src="{{link2}}">
+        <img id="3" class="img" src="{{link3}}">
+        <img id="4" class="img" src="{{link4}}">
+        <img id="5" class="img" src="{{link5}}">
+        <img id="6" class="img" src="{{link6}}">
+    </div>
+    <div  class="carro" >
+      <div id="objChange">
+        <owl-carousel-o [options]="customOptions">
+
+          <ng-container *ngFor="let slide of dynamicSlides">
+            <ng-template carouselSlide [id]="slide.id">
+              <img class="img2" [src]="slide.src" >
+              <h2 class="text-center">{{slide.title}}</h2>
+              <p class="text-center">{{slide.descripcion}}</p>
+            </ng-template>
+          </ng-container>
+        
+        </owl-carousel-o>
+      </div>
+
+    </div>
+    <div class="botones">
+        <a routerLink=""><button type="button">Atras </button></a>
+        <a routerLink="/casados"><button type="button">Adelante </button></a>
+    </div>
+</div>
+
+
